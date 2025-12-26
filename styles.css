@@ -1,0 +1,65 @@
+:root{
+  --bg:#0b1221;
+  --panel:#0f1724;
+  --accent:#22c55e;
+  --muted:#94a3b8;
+  --text:#e6eef8;
+}
+
+*{box-sizing:border-box}
+html,body{
+  height:100%;
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, #071025 0%, #091427 100%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.game-wrap{
+  max-width:900px;
+  margin:28px auto;
+  padding:18px;
+  text-align:center;
+}
+
+h1{
+  margin:6px 0 12px;
+  font-weight:600;
+  color:var(--text);
+}
+
+.scoreboard{
+  font-size:36px;
+  font-weight:700;
+  margin-bottom:10px;
+  color:var(--accent);
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  align-items:center;
+}
+
+.scoreboard .colon{
+  color:var(--muted);
+  font-weight:600;
+  font-size:28px;
+}
+
+#gameCanvas{
+  display:block;
+  margin: 0 auto;
+  background: linear-gradient(180deg,#061221 0%, #07182a 100%);
+  border: 3px solid rgba(255,255,255,0.04);
+  border-radius:6px;
+  box-shadow: 0 8px 20px rgba(2,6,23,0.6);
+  cursor: crosshair;
+}
+
+/* small explanatory text */
+.info{
+  margin-top:10px;
+  color:var(--muted);
+  font-size:13px;
+}
